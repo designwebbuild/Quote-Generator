@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html body {
+  color: #000;
+  font-family: 'Open Sans', 'Open Sans Condensed', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-bottom: 30px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+/*=============================
+* Id's
+=============================*/
+#main-title {
+  color: #FDB913;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+#sub-title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+#dropdown {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+#iteration {
+  margin: 20px 20px;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+}
+
+#container {
+  width: 50%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #eee;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/*=============================
+* Clases
+=============================*/
+.book-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 250px;
+}
+
+.feather-img {
+  width: 40px;
+  float: left;
+}
+
+.btn {
+  font-size: 20px;
+  margin-top: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 150px;
+  height: 50px;
+}
+
+.btn:hover {
+  position: relative;
+  bottom: 1.5px;
+  background-color: #FDB913;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

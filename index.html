@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+	<title>Quotation generator</title>
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:400,700" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+
+	<!-- Font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+
+
+	<!-- CSS -->
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<main>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 id="main-title">Quote Generator</h1>
+					<img src="img/book.png" class="book-img" alt="Outlined book">
+					<h2 id="sub-title">Chose your prefered Generator type</h2>
+					<section id="input-area">
+						<select name="dropdown" id="dropdown" required>
+							<option value="0">Fragment Quotes</option>
+							<option value="1">Movie Quotes</option>
+							<option value="2">Motivational Quotes</option>
+						</select>
+
+						<h3>How many paragraphs?</h3>
+						<label for="input">Choose between 1 and 5</label>
+						<select type="number" id="iteration" name="iteration" min="1" max="5" value="1">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+						<br>
+
+						<button class="btn" type="submit" id="btn">Generate</button>
+					</section>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div id="container">
+								<img src="img/feather.png" alt="feather" class="feather-img">
+								<h4>Quotes will be displayed here!</h4>
+							</div>
+						</div>
+		</main>
+	</div>
+	</div>
+
+
+
+	</div>
+
+
+
+
+
+	<!-- JavaScript -->
+	<script src="js/quotes.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
