@@ -12,14 +12,12 @@ function getPhrase(selectedArray) {
   }).join("");
 }
 
-/*============== DOM SECTION ==============*/
 const button = document.querySelector("#btn");
 const dropdown = document.querySelector("#dropdown");
 const body = document.querySelector("body");
 
-// Creates the DOM elements
 function addElement(content) {
-  const paragraph = document.createElement("p");
+  const paragraph = document.createElement("li");
   const paraText = document.createTextNode(content);
   paragraph.appendChild(paraText);
   const groupsContainer = document.getElementById("container");
@@ -47,8 +45,6 @@ function printText() {
   containerCleaner();
   generatePhrase();
 }
-
-
 
 // Execution
 button.addEventListener("click", printText);

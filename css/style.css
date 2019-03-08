@@ -4,20 +4,38 @@
 }
 
 html body {
-  color: #000;
   font-family: 'Open Sans', 'Open Sans Condensed', sans-serif;
   width: 100vw;
   height: 100vh;
 }
 
-h3 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  margin-bottom: 30px;
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+li {
+  display: inline-block;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+a {
+  color: #FDB913;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FDB913;
+  opacity: 0.5;
 }
 
 /*=============================
@@ -28,7 +46,8 @@ p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 80px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-top:10px;
+  margin-bottom: 30px;
 }
 
 #sub-title {
@@ -59,14 +78,30 @@ p {
   padding: 15px;
 }
 
+#exit-container {
+  text-align: center;
+  display: inline-block;
+  padding-right: 150px;
+}
+
+#exit-program {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  float: left;
+  padding-top: 62px;
+  padding-right: 10px;
+}
+
+#description {
+  margin-top: 40px;
+}
+
 /*=============================
 * Clases
 =============================*/
 .book-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 250px;
 }
 
@@ -76,6 +111,7 @@ p {
 }
 
 .btn {
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
   margin-top: 50px;
   background-color: #fff;
@@ -90,4 +126,20 @@ p {
   background-color: #FDB913;
   color: #fff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fas {
+  color: #FDB913;
+}
+
+.fab {
+  color: #000;
+  font-size: 50px;
+  margin: 50px 10px 0 10px;
+  transition: 0.5s;
+}
+
+.fab:hover {
+  color: #FDB913;
+  transform: rotate(360deg);
 }
