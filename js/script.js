@@ -1,7 +1,7 @@
 // Function to get random values. Parameter is an array
 function pickRandomWord(words) {
   return words[Math.floor(Math.random() * words.length)];
-};
+}
 
 // This takes as a parameter one of the arrays.
 // The map function selects each "sub" array and performs the pickRandomWord in the array to get a word.

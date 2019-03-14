@@ -59,6 +59,7 @@ a:hover {
 #dropdown {
   margin-top: 20px;
   margin-bottom: 70px;
+  outline: none;
 }
 
 #iteration {
@@ -66,6 +67,7 @@ a:hover {
   height: 30px;
   width: 50px;
   text-align: center;
+  outline: none;
 }
 
 #container {
@@ -137,6 +139,8 @@ a:hover {
   font-size: 50px;
   margin: 50px 10px 0 10px;
   transition: 0.5s;
+  -webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
 }
 
 .fab:hover {
