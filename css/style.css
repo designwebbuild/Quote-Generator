@@ -14,10 +14,6 @@ label {
   font-size: 20px;
 }
 
-li {
-  display: inline-block;
-}
-
 p {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 20px;
@@ -26,6 +22,7 @@ p {
 li {
   font-size: 20px;
   line-height: 1.6;
+  list-style: none;
 }
 
 a {
@@ -128,6 +125,14 @@ a:hover {
   background-color: #FDB913;
   color: #fff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  outline: none;
+  border: none;
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .fas {
