@@ -4,10 +4,10 @@ function randomQuote(words) {
 }
 
 
-//takes an array and returnes random quote from sub array
+//takes an array and returnes random quote from sub arrays
 function getQuote(selectedArray) {
-  return selectedArray.map(function(word) {
-    return randomQuote(word)
+  return selectedArray.map(function(words) {
+    return randomQuote(words)
   }).join("");
 }
 
@@ -20,8 +20,8 @@ const dropdown = document.querySelector("#dropdown");
 function makeElement(content) {
 
   const paragraph = document.createElement("li");
-  const paraText = document.createTextNode(content);
-  paragraph.appendChild(paraText);
+  const text = document.createTextNode(content);
+  paragraph.appendChild(text);
   const groupsContainer = document.getElementById("container");
   groupsContainer.appendChild(paragraph);
 }
@@ -60,6 +60,12 @@ const arrays = [
     ["and stay positive.\"", "as you can do it.\"", "as you can prevail.\"", "because you can do it.\"", "and be your best version.\"", "and keep trying.\"", "so you can get on top.\"", "because nothing can stop you.\""]
   ],
 
+  [
+  ["\"I’m going to make him, ", "\"Go ahead, make my, ", "\"May the force, ", "\"I love the smell of, ", "\"You’re gonna need, ", "\"Get your stinking, ", "\"I'm the king, ", "\"you’ve got to ask yourself, "],
+    ["napalm in the morning. ", "be with you. ", "you damned dirty ape. ", "Shaken, not stirred. ", "of the world. ", "an offer he can’t refuse. ", "we have a problem. ", "the need for speed. "],
+    ["- The Godfather, 1972\"", "- Sudden Impact, 1983\"", "- Star Wars, 1977\"", "- Apocalypse now, 1979\"", "- Jaws, 1975\"", "- The Terminator, 1984\"", "- Back To The Future, 1985\"", "- The Sixth Sense, 1999\""]
+  ],
+
 
   [
     [
@@ -81,7 +87,7 @@ const arrays = [
       '“My precious.” - The Lord Of The Rings: Two Towers, 2002',
       '“A martini. Shaken, not stirred.” - Goldfinger, 1964',
       '“I feel the need - the need for speed.” - Top Gun, 1986',
-      '“I.m king of the world.” - Titanic, 1997',
+      '“I\'m the king of the world.” - Titanic, 1997',
       '“Toto, I’ve got a feeling we’re not in Kansas anymore.” - The Wizard Of Oz, 1939',
       '“Fasten your seatbelts. It’s going to be a bumpy night.” - All About Eve, 1950',
       '“You talking to me?” - Taxi Driver,1976',
