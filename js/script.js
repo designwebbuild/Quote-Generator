@@ -1,6 +1,6 @@
 //makes random quotes from selected array
-function randomQuote(words) {
-  return words[Math.floor(Math.random() * words.length)];
+function randomQuote(word) {
+  return word[Math.floor(Math.random() * word.length)];
 }
 
 
@@ -47,6 +47,8 @@ function printQuotes() {
   removeText();
   generateQuote();
 }
+
+
 
 //execution
 button.addEventListener("click", printQuotes);
