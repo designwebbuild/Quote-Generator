@@ -156,3 +156,13 @@ a:hover {
   color: #FDB913;
   transform: rotate(360deg);
 }
+
+/*=============================
+* Media Queries
+=============================*/
+
+@media (max-width: 600px) {
+  #container li {
+    font-size: 16px;
+  }
+}
