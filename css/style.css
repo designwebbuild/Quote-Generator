@@ -161,8 +161,46 @@ a:hover {
 * Media Queries
 =============================*/
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #container li {
     font-size: 16px;
+
   }
+
+  #exit-container {
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  }
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container h4 {
+  font-size: 14px;
+}
+
+.book-img {
+  width: 200px;
+}
+
+#sub-title {
+  font-size: 27px;
+  font-weight: 700;
+}
+
+#main-title {
+  font-size: 30px;
+}
+
+.list-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+}
 }
