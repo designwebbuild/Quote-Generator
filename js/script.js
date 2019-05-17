@@ -20,10 +20,12 @@ const dropdown = document.querySelector("#dropdown");
 function makeElement(content) {
 
   const paragraph = document.createElement("li");
+  const horisontalRule = document.createElement("hr");
   const text = document.createTextNode(content);
   paragraph.appendChild(text);
   const groupsContainer = document.getElementById("container");
   groupsContainer.appendChild(paragraph);
+  groupsContainer.appendChild(horisontalRule);
 }
 
 //removes starting text from container
